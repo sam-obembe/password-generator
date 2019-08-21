@@ -29,6 +29,13 @@ This is a functional component. It receives the passwords through props and maps
 ## NavBar
 Basic functional app that displays the name of the app. 
 
+# Screen Shots
+## Default Page
+<img src = "./readme_pictures/Default.jpg" >
+
+## Generated Passwords
+<img src="./readme_pictures/Generated.jpg">
+
 ## Available Scripts
 * **Run**: ```npm start```<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
