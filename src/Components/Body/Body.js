@@ -11,8 +11,9 @@ class Body extends Component{
 
   generate=(count,length)=>{
     let generated = [...this.state.passwords]
+    let generator = new PasswordGenerator(length)
     for(let i=0;i<count;i++){
-      let password = new PasswordGenerator(length).generate()
+      let password = generator.generate()
       generated.push(password)
     }
     this.setState({passwords:generated})
