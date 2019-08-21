@@ -1,33 +1,134 @@
-.App {
-  text-align: center;
+
+h1{
+  margin-top:0
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.App{
+  background-color: #fafafa;
+  height:100vh;
+  width:100vw;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.navbar{
+  background-color: #303030;
+  color: white;
+  top:0;
+  height: 5vh;
+}
+
+.navbar h1{
+  font-family: 'Roboto',sans-serif;
+}
+
+.box{
+  width: 45vw;
+  min-width:325px;
+  height: 70vh;
+  margin: 0 auto;
+  margin-top: 10vh;
+  display:flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.buttonGroup{
+  display:flex;
+  justify-content: space-around;
+  width: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#mainBody{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  margin: 0 auto;
+  width: 95vw;
+}
+
+#generateBox{
+  /*border: 1px solid black;*/
+  background-color:#303030;
+  color:white;
+  grid-column: 1/2;
+  grid-row:1;
+  /*margin-left:20px;*/
+  font-family: 'Roboto',sans-serif
+
+}
+
+#displayBox{
+  /*border:1px solid red;*/
+  background-color:white;
+  grid-column: 3/4;
+  grid-row:1;
+  font-family: 'Roboto Mono',monospace;
+  overflow-y: scroll;
+}
+
+#displayBox p{
+  font-size: 20px;
+}
+
+#displayBox::-webkit-scrollbar{
+  width:10px;
+  background:white;
+  outline:1px solid black;
+}
+
+#displayBox::-webkit-scrollbar-thumb{
+ background: black;
+ width:10px;
+ border-radius:10px
+}
+
+#generateBox button{
+  width:75px;
+  height:75px;
+  border-radius: 50%;
+  border: none;
+  font-family: 'Roboto',sans-serif
+}
+
+input{
+  border:none;
+  width: 200px;
+  height:30px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 20px;
+  background:transparent;
+  color:white;
+  border-bottom: 1px solid white;
+}
+
+button:hover{
+  transform:scale(1.1)
+}
+
+@media(max-width:650px){
+  #mainBody{
+    display:grid;
+    grid-template-columns:1fr;
+    grid-template-rows:1fr,1fr
   }
-  to {
-    transform: rotate(360deg);
+
+  #generateBox{
+    grid-column:1;
+    grid-row:1;
+    /*margin: 0 auto;*/
+    margin-left: 0
+  }
+
+  #displayBox{
+    grid-column:1;
+    grid-row:2;
+    /*margin: 0 auto;*/
+  }
+
+  .buttonGroup{
+    display:flex;
+    height: 50%;
+    flex-direction: column
   }
 }
+
+
