@@ -2,8 +2,8 @@
 
 *This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).*
 
-Sometimes, thinking of a strong password can be a bit tedious, so I wrote some javascript code to randomly generate a string of characters when given a specified length. The code is in *`src/PasswordGenerator.js`*. That code provides the core functionality of this app.
-
+Sometimes, thinking of a strong password can be a bit tedious, so I wrote some javascript code to randomly generate a string of characters when given a specified length. The code is in *`src/PasswordGenerator.js`*. That code provides the core functionality of this app.<br>
+Domain: https://password-generator-2019.herokuapp.com/
 # Components
 ## App.js
  The top level component that renders the Body and Navbar. 

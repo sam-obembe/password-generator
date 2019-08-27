@@ -17,7 +17,6 @@ class Body extends Component{
       generated.push(password)
     }
     this.setState({passwords:generated})
-    console.log(this.state)
   }
 
   clear=()=>{
@@ -25,7 +24,6 @@ class Body extends Component{
   }
 
   changeHandle=(e)=>{
-    console.log(e.target.value)
     this.setState({[e.target.name]:e.target.value})
   }
 
@@ -35,11 +33,11 @@ class Body extends Component{
         <PasswordDisplay passwords={this.state.passwords}/>
 
         <div className="box" id="generateBox">
+          
           <label> <h2>Password length:
             <input name="length" type="number" value={this.state.length} onChange = {(e)=>this.changeHandle(e)}/></h2>
           </label><br/>
-          
-          {/*<button onClick={()=>this.generate(1,this.state.length)}>Generate Password</button><br></br>*/}
+
           <label>
             <h2>Number of passwords:  <input name="count" type="number" value = {this.state.count} onChange = {(e)=>this.changeHandle(e)}/></h2>
           </label><br/>
